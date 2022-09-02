@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Exercício 8</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+</head>
+<body class="aula_css4">
+
+    <h1>Formulário de cadastro de livros</h1>
+
+    <h3>Preencher as informações:</h3>
+
+    <label  class="aula_css2" class="aula_css"for="exampleFormControlFile1">Insira uma Imagem:</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+
+    <p><label class="aula_css2" for="exampleInputNome">Nome:</label>
+    <input type="text" class="form-control" id="exampleInputNome" maxlength="10" size="50" placeholder="Insira seu nome"></p>
+   
+    <label class="aula_css2" for="exampleInputSobrenome">Sobrenome:</label>
+    <input type="text" class="form-control" id="exampleInputSobrenome" maxlength="10" size="50" placeholder="Insira seu sobrenome">
+
+    <br>
+    <p><label class="aula_css2" for="exampleInputDatadenascimento">Data de nascimento:</label>
+    <input type="date" class="form-control" id="exampleInputDatadenascimento"></p>
+    </br>
+
+    <label class="aula_css2" for="exampleInputNomedolivro">Nome do livro:</label>
+    <input type="text" class="form-control" id="exampleInputNomedolivro" maxlength="10" size="50" placeholder="Insira o nome do livro">
+
+    <br>
+    <p><label class="aula_css2" for="exampleInputNomedoautor">Nome do autor:</label>
+    <input type="text" class="form-control" id="exampleInputNomedoautor" maxlength="10" size="50" placeholder="Insira o nome do autor"></p>
+    </br>
+
+    <label class="aula_css2" for="exampleInputDatadeempréstimo">Data de empréstimo:</label>
+    <input type="date" class="form-control" id="exampleInputDatadeempréstimo">
+
+    <br>
+    <p><label class="aula_css2" for="exampleInputDatadedevolução">Data de devolução:</label>
+    <input type="date" class="form-control" id="exampleInputDatadedevolução"></p>
+    </br>
+
+    <legend class="aula_css2">Tempo de empréstimo do livro</legend>
+
+    <br>
+    <input type="radio" id="1semana" name="fav_language" value="1 Semana">
+    <label class="aula_css2" for="1semana">1 Semana</label>
+    </br>
+
+    <input type="radio" id="3semanas" name="fav_language" value="3 Semanas">
+    <label class="aula_css2" for="3semanas">3 Semanas</label>
+
+    <br>
+    <input type="radio" id="5semanas" name="fav_language" value="5 Semanas">
+    <label class="aula_css2" for="5semanas">5 Semanas</label>
+    </br>
+
+    <input type="radio" id="7semanas" name="fav_language" value="7 Semanas">
+    <label class="aula_css2" for="7semanas">7 Semanas</label>
+
+    <br>
+    <input type="radio" id="1mês" name="fav_language" value="1 Mês">
+    <label class="aula_css2" for="1mês">1 Mês</label>
+    </br>
+
+    <input type="radio" id="2meses" name="fav_language" value="2 Meses">
+    <label class="aula_css2" for="2meses">2 Meses</label>
+
+    <p><label class="aula_css2" for="cars">Nome do livro:</label>
+
+    <select name="Livros" id="Livros">
+        <option class="aula_css3"value="harrypotter">Harry Potter</option>
+        <option classvalue="osenhordosáneis">O Senhor dos anéis</option>
+        <option value="ascrônicasdenarnia">As crônicas de narnia</option>
+        <option value="percyjackson">Percy Jackson</option>
+        <option value="osheroisdolimpo">Os heróis do olimpo</option>
+        <option value="rangersordemdosarqueiros">Rangers - Ordem dos arqueiros</option>
+        <option value=""></option>
+      </select></p>
+    </br>
+
+    <legend class="aula_css2">Situação:</legend>
+      <br>
+      <input type="radio" disabled id="emprestado" name="fav_language" value="Emprestado">
+      <label for="emprestado">Emprestado</label>
+      </br>
+
+      <input type="radio" disabled id="devolvido" name="fav_language" value="Devolvido">
+      <label for="devolvido">Devolvido</label>
+
+      <br>
+      <input type="radio" disabled id="multado" name="fav_language" value="Multado">
+      <label for="multado">Multado</label>
+      </br>
+
+      <br>
+      <label>Qual sua satisfação em relação a biblioteca ?</label>
+      <input type="range">
+      </br>
+
+      <br>
+      <label for="exampleInputNome">Descreva como está sendo sua experiência até o momento:</label>
+      <br>
+      <textarea rows="2" cols="100" placeholder="Digite aqui..."></textarea>
+      </br>
+      </br>
+
+      <label for="username">Escolha uma senha:</label>
+      <br>
+      <input type="password" id="pass" name="password" placeholder="Digite sua senha">
+      </br>
+
+      <br>
+      <label for="pass">Confirme sua senha:</label>
+      <br>
+      <input type="password" id="pass" name="password" placeholder="Digite sua senha">
+      </br>
+      </br>
+
+      <legend>Confirme:</legend>
+
+      <br>
+      <input type="checkbox" id="Termos" name="Termos"
+             checked>
+      <label for="Termos">Você concorda com os termos ?</label>       
+      </br>
+       
+</body>
+</html>

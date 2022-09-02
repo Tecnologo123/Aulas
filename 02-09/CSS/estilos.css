@@ -1,0 +1,13 @@
+.aula_css{
+    color: crimson;  
+}
+.aula_css2{
+    font-family: georgia;
+}
+.aula_css3{
+    font-size: 20px;
+}
+.aula_css4{
+    background-image: url("imagemfundo.jpg");
+    opacity: 0.6;
+}
