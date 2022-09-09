@@ -31,3 +31,9 @@ function somar() {
     var elemento = document.getElementById('resultado')
     elemento.innerHTML = `A soma é igual a ${soma}!`
 }
+function soma() {
+    var n1 = Number (window.prompt('Digite um número: '))
+    var n2 = Number (window.prompt('Digite outro número: '))
+    soma = n1 + n2
+
+}
