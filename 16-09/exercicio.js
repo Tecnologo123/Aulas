@@ -45,3 +45,15 @@ function validar_campo() {
         window.alert('Sucesso!')
     }
 }
+function validar_campo2() {
+    nm = document.getElementById('nome')
+    sn = document.getElementById('sobrenome')
+
+    if (nm.value == "") {
+        window.alert('Preencha o campo Nome!')
+    }else if (sn.value == "") {
+        window.alert('Preencha o campo Sobrenome!')
+    }else {
+        window.alert('Sucesso!')
+    }
+}
