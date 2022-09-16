@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Exercício 8</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="exercicios.js"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-primary">
+    <!-- Navbar content -->
+    <a href="Table.html" class="navbar-brand" >Livros</a>
+  </nav>
+
+  <div class="row">
+      <div class="col">
+        <h1>Formulário de cadastro de livros</h1>
+
+        <h3>Preencher as informações:</h3>
+     
+      </div>
+      <div class="col">
+        <label for="exampleFormControlFile1">Insira uma Imagem:</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+     
+      </div>
+  </div>
+  <div class="row">
+      <div class="col">
+        <label for="exampleInputNome">Nome:</label>
+        <input type="text" class="form-control" id="exampleInputNome" maxlength="10" size="50" placeholder="Insira seu nome"></p>
+       
+      </div>
+      <div class="col">
+        <label for="exampleInputSobrenome">Sobrenome:</label>
+        <input type="text" class="form-control" id="exampleInputSobrenome" maxlength="10" size="50" placeholder="Insira seu sobrenome">
+    
+      </div>
+  </div>
+  <div class="row">
+      <div class="col">
+        <label for="exampleInputDatadenascimento">Data de nascimento:</label>
+        <input type="date" class="form-control" id="exampleInputDatadenascimento"></p> 
+       
+      </div>
+      <div class="col">
+        <label for="exampleInputNomedolivro">Nome do livro:</label>
+        <input type="text" class="form-control" id="exampleInputNomedolivro" maxlength="10" size="50" placeholder="Insira o nome do livro">
+
+      </div>
+  </div>
+  <div class="row">
+      <div class="col">
+        <label for="exampleInputNomedoautor">Nome do autor:</label>
+    <input type="text" class="form-control" id="exampleInputNomedoautor" maxlength="10" size="50" placeholder="Insira o nome do autor"></p>
+      </div>
+      <div class="col">
+        <label for="exampleInputDatadeempréstimo">Data de empréstimo:</label>
+        <input type="date" class="form-control" id="exampleInputDatadeempréstimo">
+
+      </div>
+  </div>
+  
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label for="exampleInputDatadedevolução">Data de devolução:</label>
+      <input type="date" class="form-control" id="exampleInputDatadedevolução"></p>
+
+    </div>
+    <div class="col">
+      <legend>Tempo de empréstimo do livro</legend>
+
+      <br>
+      <input type="radio" id="1semana" name="fav_language" value="1 Semana">
+      <label for="1semana">1 Semana</label>
+      </br>
+  
+      <input type="radio" id="3semanas" name="fav_language" value="3 Semanas">
+      <label for="3semanas">3 Semanas</label>
+  
+      <br>
+      <input type="radio" id="5semanas" name="fav_language" value="5 Semanas">
+      <label for="5semanas">5 Semanas</label>
+      </br>
+  
+      <input type="radio" id="7semanas" name="fav_language" value="7 Semanas">
+      <label for="7semanas">7 Semanas</label>
+  
+      <br>
+      <input type="radio" id="1mês" name="fav_language" value="1 Mês">
+      <label for="1mês">1 Mês</label>
+      </br>
+  
+      <input type="radio" id="2meses" name="fav_language" value="2 Meses">
+      <label for="2meses">2 Meses</label>
+  </div>
+    <div class="col">
+      <p><label for="cars">Nome do livro:</label>
+
+        <select name="Livros" id="Livros">
+            <option value="harrypotter">Harry Potter</option>
+            <option value="osenhordosáneis">O Senhor dos anéis</option>
+            <option value="ascrônicasdenarnia">As crônicas de narnia</option>
+            <option value="percyjackson">Percy Jackson</option>
+            <option value="osheroisdolimpo">Os heróis do olimpo</option>
+            <option value="rangersordemdosarqueiros">Rangers - Ordem dos arqueiros</option>
+            <option value=""></option>
+          </select></p>
+        </br>
+    </div>
+    </div>
+</div>
+
+    <legend>Situação:</legend>
+      <br>
+      <input type="radio" disabled id="emprestado" name="fav_language" value="Emprestado">
+      <label for="emprestado">Emprestado</label>
+      </br>
+
+      <input type="radio" disabled id="devolvido" name="fav_language" value="Devolvido">
+      <label for="devolvido">Devolvido</label>
+
+      <br>
+      <input type="radio" disabled id="multado" name="fav_language" value="Multado">
+      <label for="multado">Multado</label>
+      </br>
+
+      <br>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <label>Qual sua satisfação em relação a biblioteca ?</label>
+            <input type="range">
+          </div>
+        </div>
+      </div>
+      
+      
+      </br>
+
+      <br>
+      <label for="exampleInputNome">Descreva como está sendo sua experiência até o momento:</label>
+      <br>
+      <textarea rows="2" cols="100" placeholder="Digite aqui..."></textarea>
+      </br>
+      </br>
+
+      <label for="username">Escolha uma senha:</label>
+      <br>
+      <input type="password" id="pass" name="password" placeholder="Digite sua senha">
+      </br>
+
+      <br>
+      <label for="pass">Confirme sua senha:</label>
+      <br>
+      <input type="password" id="pass" name="password" placeholder="Digite sua senha">
+      </br>
+      </br>
+
+      <legend>Confirme:</legend>
+
+      <br>
+      <input type="checkbox" id="Termos" name="Termos"
+             checked>
+      <label for="Termos">Você concorda com os termos ?</label>       
+      </br>
+
+      <button onclick="clicou2()" type="button" class="btn btn-danger">Excluir</button>
+      <button onclick="clicou4()" onclick="clicou3()" onclick="clicou()" type="button" class="btn btn-primary">Salvar</button>
+       
+</body>
+</html>
