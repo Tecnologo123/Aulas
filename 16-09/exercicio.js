@@ -35,3 +35,13 @@ function calcular_media2() {
         window.alert(`Parabéns, ${nome}!`)
     }
 }
+function validar_campo() {
+    elemento = document.getElementById('nome')
+    valor = elemento.value
+
+    if (valor == "") {
+        window.alert('Preencha!')
+    }else {
+        window.alert('Sucesso!')
+    }
+}
