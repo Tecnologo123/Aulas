@@ -68,28 +68,31 @@
     <div class="col">
       <label>Tempo de empréstimo do livro</label>
       <br>
-      <input type="radio" value="1 Semana">
-      <label>1 Semana</label>
-      </br>
+      <div class="form-check">
+        <input class="form-check-input type=" radio" value="1 Semana">
+        <label>1 Semana</label>
+        </br>
 
-      <input type="radio" value="3 Semanas">
-      <label>3 Semanas</label>
-      <br>
+        <input class="form-check-input type=" radio" value="3 Semanas">
+        <label>3 Semanas</label>
+        <br>
 
-      <input type="radio" value="5 Semanas">
-      <label>5 Semanas</label>
-      </br>
+        <input class="form-check-input type=" radio" value="5 Semanas">
+        <label>5 Semanas</label>
+        </br>
 
-      <input type="radio" value="7 Semanas">
-      <label>7 Semanas</label>
-      <br>
+        <input class="form-check-input type=" radio" value="7 Semanas">
+        <label>7 Semanas</label>
+        <br>
 
-      <input type="radio" value="1 Mês">
-      <label for="1mês">1 Mês</label>
-      </br>
+        <input class="form-check-input type=" radio" value="1 Mês">
+        <label>1 Mês</label>
+        </br>
 
-      <input type="radio" value="2 Meses">
-      <label>2 Meses</label>
+        <input class="form-check-input type=" radio" value="2 Meses">
+        <label>2 Meses</label>
+      </div>
+
     </div>
 
     <div class="col">
@@ -107,16 +110,16 @@
     <div class="col">
       <label>Situação:</label>
       <br>
-      <input type="radio" disabled id="emprestado" name="fav_language" value="Emprestado">
-      <label for="emprestado">Emprestado</label>
+      <input type="radio" id="emprestado" value="Emprestado">
+      <label>Emprestado</label>
       </br>
 
-      <input type="radio" disabled id="devolvido" name="fav_language" value="Devolvido">
-      <label for="devolvido">Devolvido</label>
+      <input type="radio" id="devolvido" value="Devolvido">
+      <label>Devolvido</label>
 
       <br>
-      <input type="radio" disabled id="multado" name="fav_language" value="Multado">
-      <label for="multado">Multado</label>
+      <input type="radio" disabled id="multado" value="Multado">
+      <label>Multado</label>
       <br>
 
     </div>
@@ -132,30 +135,30 @@
         <br>
         <textarea class="form-control" rows="2" cols="100" placeholder="Digite aqui..."></textarea>
       </div>
-    
 
-    <div class="row">
-      <div class="col">
-        <label for="username">Escolha uma senha:</label>
-        <input class="form-control" type="password" id="password" placeholder="Digite sua senha">
+
+      <div class="row">
+        <div class="col">
+          <label>Escolha uma senha:</label>
+          <input class="form-control" type="password" id="password" placeholder="Digite sua senha">
+        </div>
+        <div class="col">
+          <label>Confirme sua senha:</label>
+          <input class="form-control" type="password" id="password_confirm" placeholder="Digite sua senha">
+        </div>
       </div>
-      <div class="col">
-        <label for="pass">Confirme sua senha:</label>
-        <input class="form-control" type="password" id="password_confirm" placeholder="Digite sua senha">
+      <div class="row justify-content-center align-itens-center">
+        <div class="col">
+          <input type="checkbox" id="Termos">
+          <label>Você concorda com os termos ?</label>
+        </div>
       </div>
-    </div>
-    <div class="row justify-content-center align-itens-center">
-      <div class="col">
-        <input type="checkbox" id="Termos">
-        <label>Você concorda com os termos ?</label>
+      <div class="row justify-content-center align-itens-center">
+        <div class="col-md-auto">
+          <button type="button" class="btn btn-danger">Excluir</button>
+          <button type="button" class="btn btn-primary">Salvar</button>
+        </div>
       </div>
-    </div>
-    <div class="row justify-content-center align-itens-center">
-      <div class="col-md-auto">
-        <button type="button" class="btn btn-danger">Excluir</button>
-        <button type="button" class="btn btn-primary">Salvar</button>
-      </div>
-    </div>
 </body>
 
 </html>
