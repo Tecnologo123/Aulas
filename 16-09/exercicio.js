@@ -57,3 +57,12 @@ function validar_campo2() {
         window.alert('Sucesso!')
     }
 }
+function par_impar(){
+    var num = Number(window.prompt('Insira um número'))
+    if (num %2 == 0) {
+        window.alert('Par!')
+    }else {
+        window.alert('Impar!')
+    } 
+
+}
