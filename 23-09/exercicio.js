@@ -23,3 +23,28 @@ function calcular() {
     }
 
 }
+function calcular2() {
+    var n1 = Number(window.prompt('Solicitar um número:'));
+    var n2 = Number(window.prompt('Solicitar outro número:'));
+    var opcao = Number(window.prompt('Escolha uma opção de operação matemática: \n 1)Soma \n 2)Multiplicação \n 3)Subtração \n 4)Divisão '));
+
+    switch (opcao) {
+        case 1 :
+            resultado = n1 + n2
+            window.alert(`O resultado da soma é ${resultado}`)
+            break
+        case 2 :
+            resultado = n1 * n2 
+            window.alert(`O resultado da multiplicação é ${resultado}`)
+            break
+        case 3 :
+            resultado = n1 - n2
+            window.alert(`O resultado da subtração é ${resultado}`)
+            break
+        case 4 :
+            resultado = n1 / n2
+            window.alert(`O resultado da divisão é ${resultado}`)
+        default :
+            window.alert(`Opção inválida`)
+    }
+}
