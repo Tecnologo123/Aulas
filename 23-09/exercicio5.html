@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Insira um campo para nome, idade
+        Insira um botão
+        Ao cliclar no botão, deve ser validada a idade.
+        Se a idade for maior ou igual a 18 exiba um alert na tela com a seguinte mensagem: ("Cadasto realizado com Sucesso!")
+        Se a idade for menor que 18 exiba um alert na tela com a seguinte mensagem: ("Você não pode se cadastrar nesse site")
+    -->
+    <meta charset="utf-8">
+    <title>Exercício 1</title>
+    <script src="exercicio.js"></script>
+</head>
+<body>
+    <h1>Validar idade</h1>
+    <label>Nome:</label>
+    <input type="text" class="form-control" id="nome" maxlength="10" size="50" placeholder="Insira seu nome">
+    <br>
+    <br>
+    <label>Idade:</label>
+    <input type="text" class="form-control" id="idade" maxlength="10" size="50" placeholder="Insira sua idade">
+    <br>
+    <br>
+    <input type="button" onclick="validar_idade()" value="Salvar">
+
+</body>
+</html>
