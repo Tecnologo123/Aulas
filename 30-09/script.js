@@ -20,3 +20,15 @@ function calcular_media() {
     var media = soma/qtd
     window.alert(`A média da turma é ${media}`)    
 }
+function calcular_media2() {
+    var qtd = window.prompt('Quantas notas deseja inserir ?') 
+    var soma = 0
+
+    for (var i = 0 ;i < qtd ;i++) {
+        var nota = Number(window.prompt('Digite uma nota:'))
+        //soma = soma + nota
+        soma += nota 
+    }
+    var media = soma/qtd
+    window.alert(`A média da turma é ${media}`)    
+}
