@@ -7,5 +7,4 @@ function par_impar(){
     }
     var media = soma/10
     window.alert(`A média da turma é ${media}`) 
-
 }
