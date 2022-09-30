@@ -72,14 +72,17 @@ function par_impar(){
 
 }
 function calcular_idade() {
-    var anonsc = (window.prompt('Insira o ano de nascimento'))   
+    var ano_atual = window.prompt('Qual o ano atual ?')
+    var ano_nasc = window.prompt('Qual seu ano de nascimento ?')
+    var idade = ano_atual - ano_nasc
+    window.alert(`Você tem ${idade} anos`)
 }
 function opcoes() {
     var opcao = Number(window.prompt('Escolha uma opção de operação matemática: \n 1)Calcular idade\n 2)Calcular média \n 3)Número maior \n 4)Par ou Impar ')); 
 
     switch (opcao) {
         case 1 :
-            
+            calcular_idade()
             break
         case 2 :
             calcular_media2() 

@@ -2,7 +2,8 @@
 <html>
 <head>
     <!--
-        Solicite ao usuário que escolha uma das seguintes opções:
+        Inclua os seguintes botões na tela:
+        Quando houver um clique, cada botão deve executar uma das seguintes tarefas:
             -   1- Calcular Idade.
             -   2- Calcular Média de duas notas de um aluno.
             -   3- Verificar qual número é maior.
@@ -30,7 +31,6 @@
                 Se for impar exibir um alert com a mensagem: "O número ${numero} é impar".
 
         Dicas:
-            Você pode usar o switch case.
             Você pode usar funções que foram implementadas nos exercícios anteriores.
             Você pode usar o "\n" para quebrar linha em uma string.
     -->
@@ -40,7 +40,25 @@
     <script src="exercicio.js"></script>
 </head>
 <body>
-    <h1></h1>
-    <input type="button" onclick="opcoes()" value="Clique para começar">
+
+    <input type="button" onclick="calcular_idade()" value="Calcular idade">
+    <p id="idade">
+        ...
+    </p>
+
+    <input type="button" onclick="calcular_media()" value="Calcular média de duas notas de um aluno">
+    <p id="media">
+        ...
+    </p>
+
+    <input type="button" onclick="calcular()" value="Verificar qual número é maior">
+    <p id="numero">
+        ...
+    </p>
+
+    <input type="button" onclick="par_impar()" value="Verificar se o número é par ou impar">
+    <p id="parimpar"> 
+        ...
+    </p>
 </body>
 </html>
