@@ -94,11 +94,5 @@ function somar(numero1,numero2){
 
 function subtrair(numero1,numero2){
     resultado = numero1 - numero2
-    return resultado
-=======
-    
-}
-function calcular_pares_impares() {
-
->>>>>>> 3d2c5d7cb8569fd4307c551a231648cf90c92bc5
+    return resultado    
 }
