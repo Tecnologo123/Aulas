@@ -7,8 +7,8 @@ function par_impar(){
     }
     var media = soma/10
     window.alert(`A média da turma é ${media}`) 
-
 }
+
 function calcular_media() {
     var qtd = window.prompt('Quantas notas deseja inserir ?') 
     var soma = 0
