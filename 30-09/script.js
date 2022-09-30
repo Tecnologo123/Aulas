@@ -44,7 +44,10 @@ function calcular_par_impar() {
             mensagem=`${i} é ímpar\n`
             mensagem_inteira += mensagem
         }
-        alert(mensagem_inteira)
     }
+    alert(mensagem_inteira)
     
+}
+function calcular_pares_impares() {
+
 }
