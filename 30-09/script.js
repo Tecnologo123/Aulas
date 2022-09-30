@@ -68,17 +68,25 @@ function par_impar(numero) {
 }
 
 function calculadora(){
-    opcao = prompt("digite a operacao\n[1]Soma\n[2]Subtração")
+    opcao = Number(prompt("digite a operacao\n[1]Soma\n[2]Subtração\n[3]Multiplicação\n[4]Divisão"))
     numero1 = Number(prompt("digite um numero:"))
     numero2 = Number(prompt("digite outro numero:"))
 
     switch (opcao){
         case 1:
-            resultado = soma(numero1,numero2)
+            resultado = somar(numero1,numero2)
             alert(`O resultado é ${resultado}`)
             break
         case 2:
             resultado = subtrair(numero1,numero2)
+            alert(`O resultado é ${resultado}`)
+            break
+        case 3:
+            resultado = multiplicar(numero1,numero2)
+            alert(`O resultado é ${resultado}`)
+            break
+        case 4:
+            resultado = dividir(numero1,numero2)
             alert(`O resultado é ${resultado}`)
             break
         default:
@@ -95,4 +103,12 @@ function somar(numero1,numero2){
 function subtrair(numero1,numero2){
     resultado = numero1 - numero2
     return resultado    
+}
+function multiplicar(numero1,numero2){
+    resultado = numero1 * numero2
+    return resultado
+}
+function dividir(numero1,numero2){
+    resultado = numero1 / numero2
+    return resultado
 }
