@@ -1,0 +1,7 @@
+-- INSERT INTO genero (nome_genero) values ('Fantasia');
+
+-- INSERT INTO genero (nome_genero) values ('Aventura');
+
+INSERT INTO livro (nome_livro, subtitulo_livro,data_lancamento_livro,
+quantidade_paginas_livro,fk_genero)
+VALUES('Percy Jackson','Rangers Ordem dos arqueiros','01/01/2005',400, 1);

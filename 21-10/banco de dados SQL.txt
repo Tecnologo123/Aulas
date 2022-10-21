@@ -1,0 +1,37 @@
+-- CREATE DATABASE senai;
+/*CREATE TABLE livro(
+    pk_livro int PRIMARY KEY,
+    nome_livro varchar(100),
+    subtitulo_livro varchar(100),
+    data_lancamento_livro date,
+    quantidade_paginas_livro int
+);
+
+
+CREATE TABLE autor(
+    pk_autor int PRIMARY KEY AUTO_INCREMENT,
+    nome_autor varchar(100),
+    sobrenome_autor varchar(100),
+    idade_autor varchar(100),
+    nacionalidade_autor varchar(100)
+);
+
+CREATE TABLE genero(
+    pk_genero int PRIMARY KEY AUTO_INCREMENT,
+    nome_genero varchar(100) NOT NULL
+);
+
+ALTER TABLE autor
+MODIFY COLUMN idade_autor int;
+
+
+ALTER TABLE autor
+ADD (email_autor varchar(100) )
+
+
+ALTER TABLE autor
+DROP COLUMN idade_autor;
+
+CREATE TABLE livro_autor(
+    pk_livro_autor int PRIMARY KEY AUTO_INCREMENT 
+);*/
