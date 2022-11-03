@@ -1,6 +1,6 @@
 <?php
 
-     var $opcao = Number(window.prompt('Escolha uma opção de roupa Masculina: \n 1) \n 2)'))
+     $opcao = $_POST['opcao'];
 
      switch ($opcao) {
        case '1':
