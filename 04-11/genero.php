@@ -12,14 +12,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <div class="row justify-content-center align-items-centers">
-        <div class="col-mx-auto text-center m-5">
-        <a href="autor.php">Cadastrar Autor</a>
-        <a href="livro.php">Cadastrar Livro</a>
-        <a href="genero.php">Cadastrar Gênero</a>
-    </div>
-    </div>
-    
-</body>
+<div class="container-fluid">
+        <p class="h3">Cadastro de gênero.</p>
+        <form action="inserir_genero.php" method="POST">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                        <label>Nome</label>
+                        <input type="text" name="nome" class="form-control">
+                    </div>
+                    <div class="row justify-content-center align-items-centers">
+                        <div class="col-mx-auto text-center m-5">
+                            <input type="submit" value="Cadastrar" class="btn btn-success">
+                    </div>
+                </div>
+            </div>
+       </form>
+    </div>            
 </html>
