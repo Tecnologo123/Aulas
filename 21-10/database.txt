@@ -1,0 +1,29 @@
+CREATE TABLE genero(
+    pk_genero int PRIMARY KEY AUTO_INCREMENT,
+    nome_genero varchar(100) NOT NULL
+);
+
+CREATE TABLE livro(
+    pk_livro int PRIMARY KEY AUTO_INCREMENT,
+    nome_livro varchar(100),
+    subtitulo_livro varchar(100),
+    data_lancamento_livro date,
+    quantidade_paginas_livro int,
+    fk_genero int NOT NULL, 
+    FOREIGN KEY (fk_genero)REFERENCES genero(pk_genero)
+);
+
+CREATE TABLE autor(
+    pk_autor int PRIMARY KEY AUTO_INCREMENT,
+    nome_autor varchar(100),
+    sobrenome_autor varchar(100),
+    idade_autor varchar(100),
+    nacionalidade_autor varchar(100)
+);
+CREATE TABLE livro_autor(
+    pk_livro_autor int PRIMARY KEY AUTO_INCREMENT,
+    fk_autor int NOT NULL, 
+    FOREIGN KEY (fk_autor)REFERENCES autor(pk_autor),
+    fk_livro int NOT NULL, 
+    FOREIGN KEY (fk_livro)REFERENCES livro(pk_livro)
+);
