@@ -34,7 +34,7 @@
                     </div>
                     <div class="col">
                         <label>Email:</label>
-                        <input type="text" name="paginas" class="form-control">
+                        <input type="text" name="email" class="form-control">
                     </div>
                     <div class="row justify-content-center align-items-centers">
                         <div class="col-mx-auto text-center m-5">
@@ -42,6 +42,39 @@
                     </div>
                 </div>
             </div>
-       </form>
+        </form>
+        <div class="row">
+            <div class="col">
+            </div>
+                <table class="table table-striped table-bordered table-hover">
+                    <thead class="table-success">
+                        <tr>
+                            <th> Código </th>
+                            <th> Nome </th>
+                            <th> Sobrenome </th>
+                            <th> Nacionalidade </th>
+                            <th> Email </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            include("listar_autores.php");
+                            if(!empty($lista_autores)){
+                            foreach($lista_autores as $linha){
+                                echo ' <tr>
+                                           <td> '.$linha['pk_autor'] .' </td>
+                                           <td> '.$linha['nome_autor'] .' </td>
+                                           <td> '.$linha['sobrenome_autor'] .' </td>
+                                           <td> '.$linha['nacionalidade_autor'] .' </td>
+                                           <td> '.$linha['email_autor'] .' </td>
+                                       </tr> 
+
+                                ';
+                            }
+                            }
+                        ?>
+                    </tbody>
+                </table>        
+
     </div>            
 </html>

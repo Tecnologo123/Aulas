@@ -39,8 +39,16 @@
                     <div class="col">
                         <label>Gênero:</label>
                         <select name="genero" class="form-select">
-                            <option value="1">Fantasia</option>
-                            <option value="2">Aventura</option>
+                            <?php
+                                include("listar_generos.php");
+                                if(!empty($lista_generos)){
+                                    foreach($lista_generos as $linha){
+                                        echo '
+                                        <option value="'.$linha['pk_genero'].'">'.$linha['nome_genero'].'</option>
+                                        ';
+                                    }
+                                }
+                            ?>
                         </select>
                     </div>
                 </div>
@@ -51,5 +59,39 @@
                 </div>
             </div>
         </form>
+        <div class="row">
+            <div class="col">
+            </div>
+                <table class="table table-striped table-bordered table-hover">
+                    <thead class="table-success">
+                        <tr>
+                            <th> Código </th>
+                            <th> Nome </th>
+                            <th> Subtítulo </th>
+                            <th> Data </th>
+                            <th> Número de páginas </th>
+                            <th> Gênero </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            include("listar_livros.php");
+                            if(!empty($lista_livros)){
+                            foreach($lista_livros as $linha){
+                                echo ' <tr>
+                                           <td> '.$linha['pk_livro'] .' </td>
+                                           <td> '.$linha['nome_livro'] .' </td>
+                                           <td> '.$linha['subtitulo_livro'] .' </td>
+                                           <td> '.$linha['data_lancamento_livro'] .' </td>
+                                           <td> '.$linha['quantidade_paginas_livro'] .' </td>
+                                           <td> '.$linha['nome_genero'] .' </td>
+                                       </tr> 
+
+                                ';
+                            }
+                            }
+                        ?>
+                    </tbody>
+                </table>        
     </div>            
 </html>

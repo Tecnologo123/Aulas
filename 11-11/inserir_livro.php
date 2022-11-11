@@ -14,6 +14,6 @@
     unset($comando);
     unset($pdo);
 
-    header("location:livro.html");
+    header("location:livro.php");
 
 ?>

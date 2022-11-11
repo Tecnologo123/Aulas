@@ -28,5 +28,31 @@
                 </div>
             </div>
        </form>
+       <div class="row">
+            <div class="col">
+            </div>
+                <table class="table table-striped table-bordered table-hover">
+                    <thead class="table-success">
+                        <tr>
+                            <th> Código </th>
+                            <th> Nome </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            include("listar_generos.php");
+                            if(!empty($lista_generos)){
+                            foreach($lista_generos as $linha){
+                                echo ' <tr>
+                                           <td> '.$linha['pk_genero'] .' </td>
+                                           <td> '.$linha['nome_genero'] .' </td>
+                                       </tr> 
+
+                                ';
+                            }
+                            }
+                        ?>
+                    </tbody>
+                </table>        
     </div>            
 </html>
