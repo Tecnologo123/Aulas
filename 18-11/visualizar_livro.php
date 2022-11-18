@@ -54,47 +54,10 @@
                 </div>
                 <div class="row justify-content-center align-items-centers">
                     <div class="col-mx-auto text-center m-5">
-                        <input type="submit" value="Cadastrar" class="btn btn-success">
+                        <input type="submit" value="Atualizar" class="btn btn-success">
                     </div>
                 </div>
             </div>
         </form>
-        <div class="row">
-            <div class="col">
-            </div>
-                <table class="table table-striped table-bordered table-hover">
-                    <thead class="table-success">
-                        <tr>
-                            <th> Código </th>
-                            <th> Nome </th>
-                            <th> Subtítulo </th>
-                            <th> Data </th>
-                            <th> Número de páginas </th>
-                            <th> Gênero </th>
-                            <th colspan="2"> Ações </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                            include("listar_livros.php");
-                            if(!empty($lista_livros)){
-                            foreach($lista_livros as $linha){
-                                echo ' <tr>
-                                           <td> '.$linha['pk_livro'] .' </td>
-                                           <td> '.$linha['nome_livro'] .' </td>
-                                           <td> '.$linha['subtitulo_livro'] .' </td>
-                                           <td> '.$linha['data_lancamento_livro'] .' </td>
-                                           <td> '.$linha['quantidade_paginas_livro'] .' </td>
-                                           <td> '.$linha['nome_genero'] .' </td>
-                                           <td> <a href="excluir_livro.php?codigo='.$linha['pk_livro'].'"> <img src="icones/excluir.png" height="20px" width="20px"> <a> </td>
-                                           <td> <a href="visualizar_livro.php?codigo='.$linha['pk_livro'].'"> <img src="icones/editar.png" height="20px" width="20px"> <a> </td>
-                                       </tr> 
-
-                                ';
-                            }
-                            }
-                        ?>
-                    </tbody>
-                </table>        
     </div>            
 </html>
