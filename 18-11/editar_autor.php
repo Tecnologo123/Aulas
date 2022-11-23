@@ -3,7 +3,7 @@
 
     $codigo = $_GET['codigo'];
 
-    $comando = $pdo->prepare("DELETE FROM autor WHERE pk_autor = ?");
+    $comando = $pdo->prepare("ALTER TABLE FROM autor WHERE pk_autor = ?");
     $comando->execute([$codigo]);
 
     header("location:autor.php");

@@ -43,13 +43,8 @@
                             include("listar_generos.php");
                             if(!empty($lista_generos)){
                             foreach($lista_generos as $linha){
-                                echo ' <tr>
-                                           <td> '.$linha['pk_genero'] .' </td>
-                                           <td> '.$linha['nome_genero'] .' </td>
-                                           <td> <a href="excluir_genero.php?codigo='.$linha['pk_genero'].'"> <img src="icones/excluir.png" height="20px" width="20px"> <a> </td>
-                                           <td> <a href="visualizar_genero.php?codigo='.$linha['pk_genero'].'"> <img src="icones/editar.png" height="20px" width="20px"> <a> </td>
-                                       </tr> 
-
+                                echo ' 
+                                <option value="'.$linha['pk_genero'].'">'.$linha['nome_genero'].'</option>
                                 ';
                             }
                             }

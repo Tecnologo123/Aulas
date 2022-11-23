@@ -61,16 +61,8 @@
                             include("listar_autores.php");
                             if(!empty($lista_autores)){
                             foreach($lista_autores as $linha){
-                                echo ' <tr>
-                                           <td> '.$linha['pk_autor'] .' </td>
-                                           <td> '.$linha['nome_autor'] .' </td>
-                                           <td> '.$linha['sobrenome_autor'] .' </td>
-                                           <td> '.$linha['nacionalidade_autor'] .' </td>
-                                           <td> '.$linha['email_autor'] .' </td>
-                                           <td> <a href="excluir_autor.php?codigo='.$linha['pk_autor'].'"> <img src="icones/excluir.png" height="20px" width="20px"> <a> </td>
-                                           <td> <a href="visualizar_autor.php?codigo='.$linha['pk_autor'].'"> <img src="icones/editar.png" height="20px" width="20px"> <a> </td>
-                                       </tr> 
-
+                                echo '
+                                <option value="'.$linha['pk_genero'].'">'.$linha['nome_genero'].'</option>
                                 ';
                             }
                             }
