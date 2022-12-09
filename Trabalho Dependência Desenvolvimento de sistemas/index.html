@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+<body>
+
+<div class="container-fluid">
+                  <div class="row justify-content-center align-items-centers">
+                    <div class="col-md-auto">
+                     <h3 class="fw-normal">Faça login</h3>
+                    </div>
+                  </div>          
+                  
+                    <form action="login.php" method="POST">
+                        <div class="form-group">
+                          <div class="row justify-content-center align-items-centers">
+                            <div class="col-md-auto">
+                              <label>E-mail:</label>
+                              <input style="width: 300px" type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Seu email">
+                            </div>
+                          </div>
+                          <div class="row justify-content-center align-items-centers">
+                            <div class="col-md-auto"> 
+                              <label>Senha:</label>
+                              <input style="width: 300px" type="password" name="senha" class="form-control" placeholder="Senha">
+                            </div>
+                          </div>
+                          <div class="row justify-content-center align-items-centers">
+                            <div class="col-md-auto">
+                            <input style="width: 300px" type="submit" class="btn btn-success mt-3" value="Entrar">
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </form> 
+                    </div>
+                  </div>
+                </div>
+      
+    
+</body>
+</html>
+    
