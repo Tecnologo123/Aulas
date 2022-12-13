@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro bandas</title>
+    <title>Cadastro álbuns</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
@@ -14,31 +14,42 @@
 </head>
 <body>
     <div class="container-fluid">
-        <p class="h3">Cadastro de bandas</p>
-        <form>
+        <p class="h3">Cadastro de álbuns</p>
+        <form action="../source/inserir_album.php" method="POST">
             <div class="form-group">
                 <div class="row">
                     <div class="col">
-                        <label>Nome da banda:</label>
+                        <label>Nome do álbum:</label>
                         <input type="text" name="nome" class="form-control" >
                     </div>
                     <div class="col">
-                         <label>Gênero da banda:</label>
-                         <input type="text" name="genero" class="form-control" >
+                        <label>Banda:</label>
+                        <select class="form-select" name="genero">
+                            <?php
+                                include("../source/listar_bandas.php");
+                                if(!empty($listar_bandas)){
+                                    foreach($listar_bandas as $linha){
+                                        echo '
+                                        <option value="'.$linha['pk_banda'].'">'.$linha['nome_banda'].'</option>
+                                        ';
+                                    }
+                                }
+                            ?>
+                        </select>
+                   </div>
+                    <div class="col">
+                         <label>Total de músicas:</label>
+                         <input type="text" name="total_músicas" class="form-control" >
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <label>Número de integrantes:</label>
-                        <input type="text" name="numero de integrantes" class="form-control" >
+                        <label>Data de lançamento:</label>
+                        <input type="date" name="data" class="form-control" >
                     </div>
                     <div class="col">
-                        <label>Ano da formação:</label>
-                        <input type="text" name="ano da formacao" class="form-control" >
-                    </div>
-                    <div class="col">
-                        <label>Total de álbuns lançados:</label>
-                        <input type="text" name="total de albuns lancados" class="form-control" >
+                        <label>Tempo de duração:</label>
+                        <input type="text" name="tempo_duracao" class="form-control" >
                     </div>
                     <div class="row justify-content-center align-items-centers">
                         <div class="col-mx-auto text-center m-5">

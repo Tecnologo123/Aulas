@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro álbuns</title>
+    <title>Edição álbuns</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <p class="h3">Cadastro de álbuns</p>
+        <p class="h3">Edição de álbuns</p>
         <form>
             <div class="form-group">
                 <div class="row">
@@ -22,6 +22,12 @@
                         <label>Nome do álbum:</label>
                         <input type="text" name="nome" class="form-control" >
                     </div>
+                    <div class="col">
+                        <label>Selecione</label>
+                        <select class="form-select" name="genero">
+                            <option value="1">Rock</option>
+                        </select>
+                   </div>
                     <div class="col">
                          <label>Total de músicas:</label>
                          <input type="text" name="total de músicas" class="form-control" >
@@ -38,7 +44,7 @@
                     </div>
                     <div class="row justify-content-center align-items-centers">
                         <div class="col-mx-auto text-center m-5">
-                            <input type="submit" value="Cadastrar" class="btn btn-success">
+                            <input type="submit" value="Atualizar" class="btn btn-success">
                     </div>
                 </div>
             </div>
