@@ -13,6 +13,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<nav class="navbar navbar-success bg-success justify-content-start">
+    <!-- Navbar content -->
+    <a class="navbar-brand text-white ms-2" href="cadastroBandas.html">Bandas</a>
+    <a class="navbar-brand text-white" href="visualizacaoAlbuns.php">Visualização</a>
+    </nav>
     <div class="container-fluid">
         <p class="h3">Cadastro de álbuns</p>
         <form action="../source/inserir_album.php" method="POST">

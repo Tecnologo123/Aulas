@@ -1,7 +1,7 @@
-CREATE TABLE login (
-	pk_login int not null PRIMARY KEY AUTO_INCREMENT,
-	email_login varchar(100),
-	senha_login  varchar(500)
+CREATE TABLE usuario (
+	pk_usuario int not null PRIMARY KEY AUTO_INCREMENT,
+	email_usuario varchar(100),
+	senha_usuario  varchar(500)
 );
 
 CREATE TABLE genero(
@@ -28,3 +28,10 @@ CREATE TABLE album(
 	fk_banda int not null,
 	FOREIGN KEY (fk_banda) REFERENCES banda (pk_banda)
 );
+
+
+insert into genero(nome_genero) VALUES ("Rock");
+
+insert into genero(nome_genero) VALUES ("Heavy metal");
+
+insert into usuario (email_usuario,senha_usuario) VALUES ("felipevoigt1@hotmail.com","felipe")

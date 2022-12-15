@@ -14,7 +14,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+    <nav class="navbar navbar-success bg-success justify-content-start">
+    <!-- Navbar content -->
+    <a class="navbar-brand text-white ms-2" href="cadastroBandas.html">Bandas</a>
+    <a class="navbar-brand text-white" href="cadastroAlbuns.php">Álbuns</a>
+    </nav>
     <div class="container-fluid">
+    
         <p class="h3">Visualização de álbuns.</p>
         <div class="row">
             <div class="col">
@@ -39,12 +46,12 @@
                                 echo ' <tr>
                                            <td> '.$linha['pk_album'] .' </td>
                                            <td> '.$linha['nome_album'] .' </td>
+                                           <td> '.$linha['nome_banda'] .' </td>
                                            <td> '.$linha['total_musica_album'] .' </td>
                                            <td> '.$linha['data_lancamento_album'] .' </td>
                                            <td> '.$linha['tempo_duracao_album'] .' </td>
-                                           <td> '.$linha['nome_banda'] .' </td>
-                                           <td> <a href="excluir_album.php?codigo='.$linha['pk_album'].'"> <img src="../image/excluir.png" height="20px" width="20px"> <a> </td>
-                                           <td> <a href="visualizar_album.php?codigo='.$linha['pk_album'].'"> <img src="../image/editar.png" height="20px" width="20px"> <a> </td>
+                                           <td> <a href="../source/excluir_album.php?codigo='.$linha['pk_album'].'"> <img src="../image/excluir.png" height="20px" width="20px"> <a> </td>
+                                           <td> <a href="../pages/edicao_Albuns.php?codigo='.$linha['pk_album'].'"> <img src="../image/editar.png" height="20px" width="20px"> <a> </td>
                                        </tr> 
 
                                 ';
