@@ -2,7 +2,7 @@
     include("conexao.php");
 
     $comando = $pdo->prepare("SELECT A.pk_album,A.nome_album,A.total_musica_album,
-    A.data_lancamento_album, A.tempo_duracao_album, B.nome_banda FROM album AS A
+    A.data_lancamento_album, A.tempo_duracao_album, A.capa_album, B.nome_banda FROM album AS A
     inner join banda AS B
     on A.fk_banda = B.pk_banda;");
     

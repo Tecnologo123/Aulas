@@ -16,12 +16,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class=text-bg-dark>
 
-    <nav class="navbar navbar-success bg-success justify-content-start">
+    <nav class="navbar navbar-info- bg-info justify-content-start">
         <!-- Navbar content -->
-        <a class="navbar-brand text-white ms-2" href="cadastroAlbuns.php">Álbuns</a>
-        <a class="navbar-brand text-white" href="visualizacaoAlbuns.php">Visualização</a>
+        <a class="navbar-brand text-dark ms-2" href="cadastroAlbuns.php">Álbuns</a>
+        <a class="navbar-brand text-dark" href="visualizacaoAlbuns.php">Visualização</a>
         </nav>
     <div class="container-fluid">
         <p class="h3">Cadastro de bandas</p>
@@ -35,8 +35,16 @@
                     <div class="col">
                          <label>Gênero:</label>
                          <select class="form-select" name="genero">
-                             <option value="1">Rock</option>
-                             <option value="2">Heavy Metal</option>
+                            <?php
+                            include("../source/listar_genero.php");
+                            if(!empty($listar_genero)){
+                                foreach($listar_genero as $linha){
+                                    echo '
+                                    <option value="'.$linha['pk_genero'].'">'.$linha['nome_genero'].'</option>
+                                    ';
+                                }
+                            }
+                        ?>
                          </select>
                     </div>
                 </div>
@@ -55,7 +63,7 @@
                     </div>
                     <div class="row justify-content-center align-items-centers">
                         <div class="col-mx-auto text-center m-5">
-                            <input type="submit" value="Cadastrar" class="btn btn-success">
+                            <input type="submit" value="Cadastrar" class="btn btn-info">
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ include_once("conexao.php");
     unset($comando);
     unset($pdo);
 
-    header("location:../pages/cadastroBandas.html");
+    header("location:../pages/cadastroBandas.php");
 
 ?>
 

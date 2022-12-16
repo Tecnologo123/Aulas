@@ -12,16 +12,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class=text-bg-dark>
 
-<nav class="navbar navbar-success bg-success justify-content-start">
+<nav class="navbar navbar-info bg-info justify-content-start">
     <!-- Navbar content -->
-    <a class="navbar-brand text-white ms-2" href="cadastroBandas.html">Bandas</a>
-    <a class="navbar-brand text-white" href="visualizacaoAlbuns.php">Visualização</a>
+    <a class="navbar-brand text-dark ms-2" href="cadastroBandas.php">Bandas</a>
+    <a class="navbar-brand text-dark" href="visualizacaoAlbuns.php">Visualização</a>
     </nav>
     <div class="container-fluid">
         <p class="h3">Cadastro de álbuns</p>
-        <form action="../source/inserir_album.php" method="POST">
+        <form action="../source/inserir_album.php" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <div class="row">
                     <div class="col">
@@ -43,6 +43,10 @@
                             ?>
                         </select>
                    </div>
+                   <div class="col">
+                         <label>Capa do Album:</label>
+                         <input class="form-control" type="file" name="capa_album" >
+                    </div>
                     <div class="col">
                          <label>Total de músicas:</label>
                          <input type="text" name="total_músicas" class="form-control" >
@@ -59,7 +63,7 @@
                     </div>
                     <div class="row justify-content-center align-items-centers">
                         <div class="col-mx-auto text-center m-5">
-                            <input type="submit" value="Cadastrar" class="btn btn-success">
+                            <input type="submit" value="Cadastrar" class="btn btn-info">
                     </div>
                 </div>
             </div>

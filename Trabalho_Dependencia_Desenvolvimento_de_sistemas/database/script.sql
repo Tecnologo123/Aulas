@@ -27,6 +27,7 @@ CREATE TABLE album(
 	tempo_duracao_album time,
 	fk_banda int not null,
 	FOREIGN KEY (fk_banda) REFERENCES banda (pk_banda)
+	capa_album longtext
 );
 
 
@@ -35,3 +36,14 @@ insert into genero(nome_genero) VALUES ("Rock");
 insert into genero(nome_genero) VALUES ("Heavy metal");
 
 insert into usuario (email_usuario,senha_usuario) VALUES ("felipevoigt1@hotmail.com","felipe")
+
+  <?php
+                            include("../source/listar_albuns.php");
+                            if(!empty($listar_albuns)){
+                            foreach($listar_albuns as $linha){
+                                echo 
+
+                                ;
+                            }
+                            }
+                        ?>

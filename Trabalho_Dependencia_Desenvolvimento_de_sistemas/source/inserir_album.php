@@ -7,9 +7,14 @@ include_once("conexao.php");
     $tempoduracao = $_POST['tempo_duracao'];
     $genero = $_POST['genero'];
 
-    $comando = $pdo->prepare("INSERT INTO album (nome_album, total_musica_album, data_lancamento_album, tempo_duracao_album, fk_banda) VALUE(?,?,?,?,?)");
+    $imagem = $_FILES['capa_album'];
+    $extensao = $imagem['type'];
+    $conteudo = file_get_contents($imagem['tmp_name']);
+    $base64 = "data:".$extensao.";base64,".base64_encode($conteudo);
 
-    $comando->execute([$nome,$totalmusicas,$datalancamento,$tempoduracao,$genero]);
+    $comando = $pdo->prepare("INSERT INTO album (nome_album, total_musica_album, data_lancamento_album, tempo_duracao_album, fk_banda, capa_album) VALUE(?,?,?,?,?,?)");
+
+    $comando->execute([$nome,$totalmusicas,$datalancamento,$tempoduracao,$genero,$base64]);
 
     unset($comando);
     unset($pdo);
